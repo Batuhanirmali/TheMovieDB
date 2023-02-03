@@ -17,6 +17,9 @@
 		FF3A0A37298BF548002B0F9E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A0A35298BF548002B0F9E /* MainViewController.xib */; };
 		FF3A0A40298BFC51002B0F9E /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A0A3F298BFC51002B0F9E /* MainViewController+TableView.swift */; };
 		FF3A0A42298BFEA1002B0F9E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A0A41298BFEA1002B0F9E /* MainViewModel.swift */; };
+		FF3A0A44298D1E5F002B0F9E /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A0A43298D1E5F002B0F9E /* NetworkConstant.swift */; };
+		FF3A0A46298D200E002B0F9E /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A0A45298D200E002B0F9E /* APICaller.swift */; };
+		FF3A0A48298D2090002B0F9E /* TrendingMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A0A47298D2090002B0F9E /* TrendingMovies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FF3A0A35298BF548002B0F9E /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		FF3A0A3F298BFC51002B0F9E /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 		FF3A0A41298BFEA1002B0F9E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FF3A0A43298D1E5F002B0F9E /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		FF3A0A45298D200E002B0F9E /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		FF3A0A47298D2090002B0F9E /* TrendingMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,7 @@
 		FF3A0A39298BF935002B0F9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF3A0A47298D2090002B0F9E /* TrendingMovies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +189,8 @@
 		FF3A0A3D298BF99D002B0F9E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				FF3A0A43298D1E5F002B0F9E /* NetworkConstant.swift */,
+				FF3A0A45298D200E002B0F9E /* APICaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -325,8 +334,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3A0A48298D2090002B0F9E /* TrendingMovies.swift in Sources */,
 				FF3A0A04298BF204002B0F9E /* AppDelegate.swift in Sources */,
+				FF3A0A46298D200E002B0F9E /* APICaller.swift in Sources */,
 				FF3A0A40298BFC51002B0F9E /* MainViewController+TableView.swift in Sources */,
+				FF3A0A44298D1E5F002B0F9E /* NetworkConstant.swift in Sources */,
 				FF3A0A36298BF548002B0F9E /* MainViewController.swift in Sources */,
 				FF3A0A42298BFEA1002B0F9E /* MainViewModel.swift in Sources */,
 			);
