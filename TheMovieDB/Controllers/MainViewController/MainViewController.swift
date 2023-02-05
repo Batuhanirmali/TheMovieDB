@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var viewModel: MainViewModel = MainViewModel()
-    var cellDataSource: [Movie] = []
+    var cellDataSource: [MovieTableCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     
     func configView() {
         self.title = "Main View"
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .systemBackground
         setupTableView()
     }
     func bindViewModel() {
