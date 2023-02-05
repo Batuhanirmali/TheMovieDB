@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="TheMovieDB" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="UpT-KK-s9O" id="iOh-Ej-7oW"/>
                 <outlet property="tableView" destination="7RU-9O-Wev" id="dc4-gV-Ggm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,19 +24,28 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UpT-KK-s9O">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="opaqueSeparatorColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="UpT-KK-s9O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1yH-74-R7K"/>
                 <constraint firstItem="7RU-9O-Wev" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WSB-Y2-aST"/>
                 <constraint firstItem="7RU-9O-Wev" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bp4-sP-Rey"/>
                 <constraint firstItem="7RU-9O-Wev" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fqB-CJ-NpQ"/>
+                <constraint firstItem="UpT-KK-s9O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iqK-rg-GcN"/>
                 <constraint firstAttribute="bottom" secondItem="7RU-9O-Wev" secondAttribute="bottom" id="mku-Fl-o5p"/>
             </constraints>
             <point key="canvasLocation" x="-63.358778625954194" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
