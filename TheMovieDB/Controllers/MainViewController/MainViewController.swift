@@ -52,4 +52,17 @@ class MainViewController: UIViewController {
             self.reloadTableView()
         }
     }
+    
+    func openDetail(movieID: Int) {
+        guard let movie = viewModel.retriveMovie(with: movieID) else {
+            return
+        }
+        
+        let detailsViewModel = DetailsMovieViewModel(movie: movie)
+        let detailsController = DetailsMovieViewController(viewModel: detailsViewModel)
+        DispatchQueue.main.async {
+            //self.navigationController?.pushViewController(detailsController, animated: true)
+            self.present(detailsController, animated: true)
+        }
+    }
 }
